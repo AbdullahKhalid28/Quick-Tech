@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    min-height: 100vh;
+}
+
+.copyright{
+    text-align: center;
+    background-color: rgba(0, 169, 248, 0.334);
+    padding: 10px;
+    font-size: .75rem;
+}

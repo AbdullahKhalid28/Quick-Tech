@@ -1,0 +1,211 @@
+.home-main {
+    background: url(../images/f.bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.main-content {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+
+.gradient-btn {
+    background-color: rgb(0, 174, 255);
+    color: rgb(204, 204, 204);
+    border: 2px solid rgb(211, 211, 211);
+    background-size: 200% auto;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 45px;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.main-content .gradient-btn {
+    height: 45px;
+    width: 200px;
+    margin-top: 1.5rem;
+}
+
+.gradient-btn:hover {
+    background-color: rgba(63, 201, 255, 0.925);
+    color: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width:600px) {
+    .main-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .main-content p {
+        font-size: 1rem;
+
+    }
+
+    .gradient-btn {
+        width: 175px;
+        height: 34px;
+        font-size: .8rem;
+    }
+}
+
+.about {
+    padding: 1rem;
+    text-align: center;
+}
+
+.about > h1 {
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+    margin: 1rem 0;
+
+}
+
+.about-sub {
+    display: flex;
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.about-sub>img {
+    max-height: 250px;
+    width: 300px;
+    max-width: 90%;
+    animation: animateimage .5s linear;
+}
+
+@keyframes animateimage {
+    from {
+        transform: translateY(-15px);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about-sub .sub-sub-about {
+    padding: 1rem;
+    animation: animatetext .5s linear;
+}
+
+@keyframes animatetext {
+    from {
+        transform: translateY(15px);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about-sub .sub-sub-about p {
+    font-size: 14px;
+}
+
+.about-sub .gradient-btn {
+    width: 100px;
+    height: 27px;
+    font-size: 10px;
+    margin-top: 5px;
+
+}
+
+@media screen and (max-width:600px) {
+    .about-sub {
+        flex-direction: column;
+    }
+
+    .about-sub:last-child {
+        flex-direction: column-reverse;
+    }
+}
+
+.about-companies {
+    max-width: 800px;
+    width: 90%;
+    background-color: #f1f1f1;
+    padding: 1rem .5rem;
+    margin: 1rem auto;
+}
+.about-companies h1 span{
+    color: rgb(0, 143, 210);
+}
+.about-companies h1{
+    font-size: 2rem;
+    color: rgb(0, 174, 255);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    max-width: 83%;
+    margin: 0px auto;
+}
+
+.about-companies .company-logos {
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(62, 194, 255, 0.686);
+    font-size: 2rem;
+    transition: .3s ease-in;
+}
+
+.about-companies .company-logos .fa:hover {
+    color: rgb(0, 174, 255);
+}
+
+@media screen and (max-width:600px) {
+    .about-companies h1{
+        font-size: 1.2rem;
+    }
+    .about-companies .company-logos{
+        font-size: 1.4rem;
+    }
+}
+
+.subscribe{
+    text-align: center;
+    padding:3rem 2rem 2rem 2rem;
+}
+
+.subscribe-box{
+    padding: 10px;
+}
+
+.subscribe-box input{
+    max-width: 300px;
+    width: 65%;
+    padding: 5px 10px;
+    height: 40px;
+}
+.subscribe-box button{
+    border: none;
+    background-color: red;
+    height: 40px;
+    padding: 0 1rem;
+    color: white;
+}
