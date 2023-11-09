@@ -1,0 +1,80 @@
+section{
+    background: url(../images/contact3.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+.contact-main-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    min-width: 75%;
+    text-align: center;
+}
+.contact-main-text h1{
+    font-size: 3.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact-main-text p{
+    font-size: 1.3rem;
+    margin: 1rem 0 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.contact-main-text a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid white;
+    justify-content: center;
+}
+/* .contact-main-text a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 174, 255);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: .2s ease-in;
+} */
+.contact-main-text a:hover{
+    background-color: rgb(0, 174, 255);
+}
+@media screen and (max-width:600px){
+    .contact-main-text{
+        width: 90%;
+    }
+    .contact-main-text h1{
+        font-size: 2.4rem;
+    }
+    .contact-main-text p{
+        font-size: 1.4rem;
+        background-color: rgba(0, 0, 0, 0.281);
+    }
+    .contact-main-text a{
+        text-decoration: bolder;
+        color: rgb(0, 174, 255);
+        padding: 10px 25px;
+        border: 3px solid rgb(0, 174, 255);
+        background-color: white;
+        font-weight:bolder ;
+    }
+    .contact-main-text a:hover{
+        background-color: rgb(0, 174, 255);
+        text-decoration: bolder;
+        color: rgb(255, 255, 255);
+        padding: 10px 25px;
+        border: 3px solid rgb(255, 255, 255);
+        font-weight:bolder ;
+    }
+}
+
+.contact-form{
+    text-align: center;
+    padding: 1rem;
+}
